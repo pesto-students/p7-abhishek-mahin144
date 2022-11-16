@@ -1,0 +1,90 @@
+body{
+    height: 100vh;
+}
+.parent{
+    
+    background-color: white;
+    width: 800px;
+    height: 400px;
+    margin-left: 400px;
+    margin-top: 100px;
+    display: flex;
+    
+}
+.parent2{
+    display: flex;
+    flex-direction: column;
+}
+
+.parent3{
+display: flex;
+flex-direction: column;
+}
+.box1{
+    background-color: red;
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    z-index: 10;
+    transition: 1s;
+
+}
+.box2{
+    background-color: rgb(2, 0, 128);
+    height: 200px;
+    width: 200px;
+    margin-left: 200px;
+    z-index: 10;
+    transition: 1s;
+}
+
+.box3{
+    background-color: rgb(228, 243, 12);
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+    transition: 1s ease;
+}
+.box4{
+    background-color: rgb(5, 116, 12);
+    height: 200px;
+    width: 200px;
+    z-index: 10;
+    transition: 1s ease;
+}
+
+
+
+  
+
+.parent:hover .box1{
+transform: rotate(90deg);
+transform-origin: top left;
+
+}
+.parent:hover .box2{
+transform: rotate(-90deg);
+transform-origin: bottom left;
+
+} 
+
+.parent:hover .box3{
+transform: rotate(-90deg);
+transform-origin: top right;
+;
+}
+
+.parent:hover .box4{
+transform: rotate(90deg);
+transform-origin: bottom right;
+
+
+}
+
+.hi{
+font-size: 40px;
+position: fixed;
+margin-top: 150px;
+margin-left: 380px;
+z-index: 0;
+}
