@@ -1,0 +1,132 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    font-size: 50px;
+    
+   
+    
+}
+h1{margin: 0;
+padding-top: 10px;
+padding-bottom: 10px;
+margin-bottom: 10px;}
+
+p{
+    font-size: x-large;
+    margin: 0;
+}
+main{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1em;
+    margin-bottom: 150px;
+grid-template-areas: 
+   "box1 box3"
+   "box1 box4"
+    "box2 box5"}
+    
+ .box1{
+    background-color: lightblue;
+    grid-area: box1;
+ }
+ .box2{
+    background-color: lightcoral;
+    grid-area: box2;
+ }
+ .box3{
+    background-color: lightgray;
+    grid-area: box3;
+ }
+ .box4{
+    background-color: lightgreen;
+    grid-area: box4;
+ }
+ .box5{
+    background-color: lightpink;
+    grid-area: box5;
+ }
+
+ @media only screen and (max-width:1000px){
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows:1fr 1fr 1fr 1fr 1fr ;
+        grid-template-areas: 
+        "box1"
+        "box2"
+        "box3"
+        "box4"
+        "box5"
+         
+    }
+ }
+ .form{
+    margin-left: 400px;
+    height: 500px;
+    width: 800px;
+    background-color: white;
+    padding-left: 20px;
+    padding-top: 50px;
+    border-top: 5px solid blue;
+    margin-bottom: 100px;
+
+    
+
+ }
+ label{
+    width: 500px;
+    display:inline-block ;
+    font-size: 25px;
+    margin: 0.2cm;
+     font-weight:bold ;}
+
+    
+    
+      .country1{
+        width: 2000px;
+        display: block;
+        margin-right: 500px;
+      }
+      
+
+       input {
+        height: 10px;
+       }
+      .submit-button{
+        height: 50px;
+        width: 100px;
+        border-radius: 25px;
+        margin-left: 350px;
+        margin-top: 20px;
+        background-color: blue;
+        color: white;
+        padding-top: 5px;
+        padding-left:5px ;
+        padding-right:5px ;
+        padding-bottom: 5px;
+       
+      }
+
+      .footer{
+        position: absolute;
+        bottom: 0;
+      }
+
+    footer{
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 100px;
+        text-align: center;
+        font-size: 20px;
+
+      }
