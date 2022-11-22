@@ -87,7 +87,7 @@ grid-template-areas:
     display:inline-block ;
     font-size: 25px;
     margin: 0.2cm;
-     font-weight:bold ;}
+ }
 
     
     
@@ -99,7 +99,7 @@ grid-template-areas:
       
 
        input {
-        height: 10px;
+        height: 20px;
        }
       .submit-button{
         height: 50px;
@@ -116,9 +116,16 @@ grid-template-areas:
        
       }
 
+      .submit-button:hover{
+         background-color: white;
+         color: blue;
+         transition: 0.5s;
+      }
+
       .footer{
         position: absolute;
         bottom: 0;
+        border-radius: 10px;
       }
 
     footer{
