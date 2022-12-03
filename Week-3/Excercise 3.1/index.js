@@ -24,7 +24,7 @@ console.log(cache);
 const memoizeAdd = memoize(add);            
 console.time();
 console.log(memoizeAdd(100,100,100));
-console.log(memoizeAdd(100,100,100,100));
+console.log(memoizeAdd(100,150,100,100));
 console.timeEnd();
 console.time();
 console.log(memoizeAdd(100,100,100));
